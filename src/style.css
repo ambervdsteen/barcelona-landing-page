@@ -1,3 +1,35 @@
+:root{
+    --main-color:(#b56b45);
+    --secondary-color:(#adc698);
+    --tertiary-color:(#d0e3c4);
+    --extra-color:(#623cea);
+    --main-font: "DM Sans", sans-serif;
+    --secondary-font:"Lora", serif;
+}
+
+
+
+header{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/Users/ambervandersteen/Documents/barcelona-landing-page/media/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
 h1{
+    font-family: var(--main-font);
     font-size: 80px;
+}
+
+p{
+    font-family: var(--secondary-font);
 }
