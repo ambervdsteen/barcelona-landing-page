@@ -1,8 +1,8 @@
 :root{
-    --main-color:(#b56b45);
-    --secondary-color:(#adc698);
-    --tertiary-color:(#d0e3c4);
-    --extra-color:(#623cea);
+    --main-color:#b56b45;
+    --secondary-color:#adc698;
+    --tertiary-color:#d0e3c4;
+    --extra-color:#623cea;
     --main-font: "DM Sans", sans-serif;
     --secondary-font:"Lora", serif;
 }
@@ -58,7 +58,45 @@ header a{
 }
 
 footer{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url(../media/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+footer h2{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+footer h4{
+    font-family: var(--secondary-font);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+footer p{
     text-align: center;
+    font-size: 12px;
+    font-family: var(--main-font);
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 30px;
 }
 
 
