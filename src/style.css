@@ -86,6 +86,15 @@ p{
     font-family: var(--secondary-font);
 }
 
+.locations-bcn{
+    background-color: var(--tertiary-color);
+}
+
+.card{
+    background-color: white;
+    padding: 25px;
+}
+
 .header-card img{
 width: 150px;
 }
@@ -94,7 +103,9 @@ width: 150px;
     text-align: center;
 }
 
-
+.card-h3{
+    opacity: 0.6;
+}
 
 footer{
     background-image: linear-gradient(
