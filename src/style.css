@@ -143,4 +143,14 @@ header a{
     
 }
 
+.grid{
+    grid-gap:42px;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.img-responsive{
+    max-width: 80%;
+}
+
 }
