@@ -84,7 +84,7 @@ h2, h3, h5{
 }
 
 main h3, .card-h3{
-    opacity: 0.5;
+    opacity: 0.35;
 }
 
 p{
@@ -212,6 +212,10 @@ header a{
 
 .grid-2-cols{
     padding: 30px 80px;
+}
+
+.header-card img{
+    display: none;
 }
 
 }
