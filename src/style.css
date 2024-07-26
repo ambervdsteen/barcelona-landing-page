@@ -85,6 +85,7 @@ h2, h3, h5{
 
 main h3, .card-h3{
     opacity: 0.35;
+    line-height: 1.5;
 }
 
 p{
@@ -218,4 +219,21 @@ header a{
     display: none;
 }
 
+}
+
+@media (max-width: 450px){
+.body{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-gallery{
+    max-width: 100%;
+}
+
+.grid-2-cols{
+    padding: 15px 40px;
+    
+}
 }
