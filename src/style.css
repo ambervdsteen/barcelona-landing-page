@@ -185,6 +185,32 @@ footer p a{
     height: 100%;
 }
 
+@media (max-width: 1080px){
+
+    .grid-3-cols-even{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .gallery-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-gallery{
+       /* width: 423px;
+       height: 362px;
+        */
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    main section.grid{
+        padding: 30px 50px;
+    }
+
+  
+}
 
 @media (max-width: 900px){
 header h1{
