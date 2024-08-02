@@ -149,6 +149,11 @@ footer p a{
     color: var(--main-color);
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
 .grid{
     display: grid;
     padding: 60px 140px;
