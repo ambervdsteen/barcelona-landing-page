@@ -110,6 +110,10 @@ p{
     margin-top: 20px;
 }
 
+.body-card h3{
+    margin-top: 12px;
+}
+
 .embed{
     width: 100%;
     aspect-ratio: 1/1;
