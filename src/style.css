@@ -74,16 +74,17 @@ h2, h3, h5{
     font-family: var(--main-font);
 }
 
-.img-responsive{
+.img-responsive, .img-gallery{
     width: 100%;
 }
 
 .img-gallery{
-    max-width: 100%;
+    height: 100%;
 }
 
 main h3, .card-h3{
-    opacity: 0.5;
+    opacity: 0.35;
+    line-height: 1.5;
 }
 
 p{
@@ -102,13 +103,16 @@ p{
 
 .card-info-header{
     text-align: center;
+    padding-top: 20px;
 }
 
+.card-h3 {
+    margin-top: 20px;
+}
 
 .embed{
     width: 100%;
     aspect-ratio: 1/1;
-
 }
 
 footer{
@@ -142,11 +146,12 @@ footer p{
     text-align: center;
     font-size: 12px;
     opacity: 0.8;
+    padding: 10px;
 }
 
 footer p a{
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--tertiary-color);
 }
 
 .grid{
@@ -170,6 +175,7 @@ footer p a{
 .gallery-grid{
     grid-gap: 10px;
     padding: 60px 120px;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header-card.grid{
@@ -183,6 +189,30 @@ footer p a{
     height: 100%;
 }
 
+
+@media (max-width: 1080px){
+
+    .grid-3-cols-even{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .gallery-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-gallery{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    main section.grid{
+        padding: 30px 50px;
+    }
+
+  
+}
 
 @media (max-width: 900px){
 header h1{
@@ -213,4 +243,24 @@ header a{
     padding: 30px 80px;
 }
 
+.header-card img{
+    display: none;
+}
+
+}
+
+@media (max-width: 450px){
+.body{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-gallery{
+    max-width: 100%;
+}
+
+main img{
+    display: none;
+}
 }
